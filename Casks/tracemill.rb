@@ -3,7 +3,8 @@ cask "tracemill" do
   postflight do
     system_command "/usr/bin/xattr",
       args: ["-dr", "com.apple.quarantine", "#{staged_path}/tracemill"],
-      must_succeed: false
+      must_succeed: false,
+      print_stderr: true
   end
 
   name "tracemill"
@@ -21,12 +22,12 @@ cask "tracemill" do
     on_intel do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_darwin_amd64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "e4959b83db2ca3771b4ff6029b3a580a3a194adb94157e204e950fb1edcdb7d1"
+      sha256 "9aae43bfa4b9c545dd795d236e51b2e21a2fb79f8853aefe09794db4aeeea0bb"
     end
     on_arm do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_darwin_arm64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "d1c43965e9f05b6cacfb63388f4b958ab4342e55a8a7c420e53adb48e03d35b1"
+      sha256 "1c78f0cc1bc1f247d4cb4e3970c5ab8dbb9b7dec519cc71335cd0ed52d330671"
     end
   end
 
@@ -34,12 +35,12 @@ cask "tracemill" do
     on_intel do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_linux_amd64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "de1c7111ce78ff08b255e7953ee486ac0d8e6a74adc5bdd435381b8aeec278bd"
+      sha256 "c71a58c629087899b3cc01d4937e860a9618dc7a31250410be6f03f9824e8861"
     end
     on_arm do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_linux_arm64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "b27b0269cd8252873180c99b271e1843cb2318a5b0a527c509ff2340a9451369"
+      sha256 "2d8346ff1a688be6446e738dcb86ae6971884e62de6d4a5a195dce14bf9755a7"
     end
   end
 
