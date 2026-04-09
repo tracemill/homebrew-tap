@@ -7,27 +7,18 @@ cask "tracemill" do
       print_stderr: true
   end
 
-  name "tracemill"
-  desc "Stateful, high-fidelity security and o11y telemetry generation engine"
-  homepage "https://tracemill.io"
-  version "0.1.8"
-
-  livecheck do
-    skip "Auto-generated on release."
-  end
-
-  binary "tracemill"
+  version "0.2.0"
 
   on_macos do
     on_intel do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_darwin_amd64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "54475fc38e52856d104b8ab3f493e98bc39e2199eaaacf0237e4b7d57f9bb44d"
+      sha256 "167366651d23209355d66aae4f6bfa9cb8dd27f7e912816b0cfe13c2e23a0071"
     end
     on_arm do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_darwin_arm64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "479e76010575ac78d64b19502d0e707883938535b2da45290dd67912c5ea2fcb"
+      sha256 "fdc74ff57aa479d112382ac1cd9262dc3fb74b460faf786026fb805754da915f"
     end
   end
 
@@ -35,14 +26,25 @@ cask "tracemill" do
     on_intel do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_linux_amd64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "f4aeb4932ea2d3577143730632d0ffc0f1000135d57616ecb809df6829ddb001"
+      sha256 "37b2de10e7651b44d44f3eb3617a309805198e32fa318f834d17740ec1ff4b02"
     end
     on_arm do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_linux_arm64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "02c009f7c0c7c1d40fdb1ed25ff9127fa6098f2c503f45065d33d5e5a7dad405"
+      sha256 "46d8542bbaaa6597c9f1f016b52582fbbfa65b15ec1a61632584da6b651a9c6f"
     end
   end
 
+  name "tracemill"
+  desc "Stateful, high-fidelity security and o11y telemetry generation engine"
+  homepage "https://tracemill.io"
+
+  livecheck do
+    skip "Auto-generated on release."
+  end
+
+  binary "tracemill"
+
   # No zap stanza required
+
 end
