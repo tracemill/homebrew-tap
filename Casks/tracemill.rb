@@ -7,18 +7,18 @@ cask "tracemill" do
       print_stderr: true
   end
 
-  version "0.4.1"
+  version "0.4.2"
 
   on_macos do
     on_intel do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_darwin_amd64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "ad0cd1add92c3c28cf38a252c17180a16f33248531591b8030fd6227b21475c5"
+      sha256 "ae074eb9b8d798fbbe16f9b367e711772d9f75bcbc4967a93c35b719e1af34e0"
     end
     on_arm do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_darwin_arm64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "e7065ec2b19880c686b304552367e3f85049300c5f1e7be4686618babc120606"
+      sha256 "e1a9a64e8c207bf709c55df4489184699d20e96f819616476d1546d95307e35c"
     end
   end
 
@@ -26,12 +26,12 @@ cask "tracemill" do
     on_intel do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_linux_amd64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "0bc230186775c94b41b1d721fe46554fdea8b8a46883e361fae273f73efc645d"
+      sha256 "b351039d93bb3d7c221f7dee9944d163f188e49ee943ca94a0ebd8d057780e83"
     end
     on_arm do
       url "https://dl.tracemill.io/cli/#{version}/tracemill_linux_arm64.tar.gz",
         verified: "dl.tracemill.io"
-      sha256 "2607524f9ce4aae2f21d35c556fe64d27f9345a33cccfe31bdc624a8134abdaa"
+      sha256 "bfba6dfa6236effeb4c32ad247ec13292345fee1137dded6a4cdb3f5fdd43c35"
     end
   end
 
