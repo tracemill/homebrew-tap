@@ -7,31 +7,31 @@ cask "tracemill" do
       print_stderr: true
   end
 
-  version "0.11.2"
+  version "0.11.3"
 
   on_macos do
     on_arm do
-      sha256 "883223effaea474546a6397519ed6c741260ba5726c154e79698de4d8ac9e24d"
+      sha256 "4e527285429f14cb76de9f3a03e9082007ff0f7691cbde196619d99ad350c967"
       url "https://dl.tracemill.io/cli/#{version}/tracemill_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c7485b548ae44a09ed3ee2386d7cbda7dec76f09f64aa6780108fcbfb3de50af"
+      sha256 "6b88a063ff4b867958062dd272820969858106d278f10a485e22a3cb75e61a6e"
       url "https://dl.tracemill.io/cli/#{version}/tracemill_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "48b917fb1ab71eb70320662a50082091a0b9e3be2ecc2ad939d0ae4697305468"
+      sha256 "19553a1d0cc29b1ab1848ae2269fc203e4f861694f60d42e93716a446365d7e6"
       url "https://dl.tracemill.io/cli/#{version}/tracemill_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "84fa0fac4678da72d0c06b2f61368c45679099ce8ae3a94f8d2d5cddc27729a5"
+      sha256 "480f2f875fc6260867028977a17b862979b854f8de6d360af85289cd8ee6303b"
       url "https://dl.tracemill.io/cli/#{version}/tracemill_linux_amd64.tar.gz"
     end
   end
 
   name "tracemill"
-  desc "Stateful, high-fidelity security and o11y telemetry generation engine"
+  desc "Generate high-fidelity synthetic telemetry to validate SIEM detections"
   homepage "https://tracemill.io"
 
   livecheck do
